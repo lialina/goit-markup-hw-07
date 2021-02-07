@@ -17,17 +17,16 @@
         <div class="container header-container">
             <nav class="header-nav">
                 <a href="#" class="link logo header-logo"><span class="logo-web">Web</span>Studio</a>
-                <ul class="list nav">
+                <ul class="list nav-list">
                     <li class="nav-item"><a class="link nav-link nav-link--inactive" href="./index.html">Студия</a></li>
-                    <li class="nav-item"><a class="link nav-link nav-link--current" href="./portfolio.html">Портфолио</a>
-                    </li>
+                    <li class="nav-item"><a class="link nav-link nav-link--current" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav-item"><a class="link nav-link nav-link--inactive" href="#">Контакты</a></li>
                 </ul>
             </nav>
-    
-            <ul class="list contacts">
+        
+            <ul class="list header-contacts">
                 <li class="contacts-item contacts-item--position">
-                    <a class="link contacts-link " href="mailto:info@devstudio.com">
+                    <a class="link contacts-link" href="mailto:info@devstudio.com">
                         <svg class="contacts-icon" width="16px" height="12px">
                             <use href="./images/sprite.svg#icon-envelope"></use>
                         </svg>
@@ -261,6 +260,7 @@
     <footer class="footer-section">
         <div class="container footer-container">
 
+            <!-- Контакты в футере -->
             <div class="contacts-footer">
                 <a class="link logo footer-logo" href="#">
                     <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
@@ -268,43 +268,44 @@
             
                 <ul class="list footer-list">
                     <li class="footer-item">
-                        <address>г. Киев, пр-т Леси Украинки, 26</address>
+                        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
                     </li>
                     <li class="footer-item">
-                        <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="link footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li class="footer-item">
-                        <a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="link footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
     
+            <!-- Соц. сети в футере -->
             <div class="join-footer">
                 <h3 class="join-title">Присоединяйтесь</h3>
-                <ul class="join list">
+                <ul class="list join-list">
                     <li class="join-item icon-instagram">
-                        <a class="link" href="#">
+                        <a class="link join-link" href="#">
                             <svg class="join-icon" wigth="20" height="20">
                                 <use href="./images/sprite.svg#icon-instagram1">
                             </svg>
                         </a>
                     </li>
                     <li class="join-item icon-twitter">
-                        <a class="link" href="#">
+                        <a class="link join-link" href="#">
                             <svg class="join-icon" wigth="20" height="20">
                                 <use href="./images/sprite.svg#icon-twitter1">
                             </svg>
                         </a>
                     </li>
                     <li class="join-item icon-facebook">
-                        <a class="link" href="#">
+                        <a class="link join-link" href="#">
                             <svg class="join-icon" wigth="20" height="20">
                                 <use href="./images/sprite.svg#icon-facebook1">
                             </svg>
                         </a>
                     </li>
                     <li class="join-item icon-linkedin">
-                        <a class="link" href="#">
+                        <a class="link join-link" href="#">
                             <svg class="join-icon" wigth="20" height="20">
                                 <use href="./images/sprite.svg#icon-linkedin1">
                             </svg>
@@ -313,11 +314,12 @@
                 </ul>
             </div>
 
+            <!-- Подписаться в футере -->
             <form name="subscribe_form" class="subscribe-form" autocomplete="on">
                 <div class="subscribe-field">
                     <label class="subscribe-label">
                         <span class="label-text">Подпишитесь на рассылку</span>
-                        <input type="email" name="user_email" placeholder="E-mail" />
+                        <input class="label-input" type="email" name="user_email" placeholder="E-mail" />
                     </label>
                 </div>
             </form>
