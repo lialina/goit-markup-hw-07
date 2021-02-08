@@ -4,27 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Портфолио</title>
 </head>
 
 <body>
     <!-- Шапка сайта-->
-    <header class="header portfolio-header">
-        <div class="container header-container">
+    <header class="header header--portfolio">
+        <div class="container header">
             <nav class="header-nav">
                 <a href="#" class="link logo header-logo"><span class="logo-web">Web</span>Studio</a>
-                <ul class="list nav-list">
+                <ul class="list nav">
                     <li class="nav-item"><a class="link nav-link nav-link--inactive" href="./index.html">Студия</a></li>
                     <li class="nav-item"><a class="link nav-link nav-link--current" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav-item"><a class="link nav-link nav-link--inactive" href="#">Контакты</a></li>
                 </ul>
             </nav>
         
-            <ul class="list header-contacts">
+            <ul class="list contacts">
                 <li class="contacts-item contacts-item--position">
                     <a class="link contacts-link" href="mailto:info@devstudio.com">
                         <svg class="contacts-icon" width="16px" height="12px">
@@ -47,7 +44,7 @@
         <section class="filter-and-examples">
             <!-- Фильтр -->
             <div class="container">
-                <ul class="list filter-list">
+                <ul class="list filter">
                     <li class="filter-item">
                         <button class="filter-button" type="button">Все</button>
                     </li>
@@ -70,7 +67,7 @@
             <!-- Примеры работ -->
             <div class="container">
                 <h1 class="examples-title">Примеры работ</h1>
-                <ul class="list examples-list">
+                <ul class="list examples">
                     <li class="examples-item">
                         <a class="link examples-link" href="#">
                             <div class="examples-thumb">
@@ -262,19 +259,19 @@
 
             <!-- Контакты в футере -->
             <div class="contacts-footer">
-                <a class="link logo footer-logo" href="#">
+                <a class="link logo logo--footer" href="#">
                     <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
                 </a>
             
                 <ul class="list footer-list">
-                    <li class="footer-item">
-                        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                    <li class="footer-list__item">
+                        <address class="footer-list__address">г. Киев, пр-т Леси Украинки, 26</address>
                     </li>
-                    <li class="footer-item">
-                        <a class="link footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li class="footer-list__item">
+                        <a class="link footer-list__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="footer-item">
-                        <a class="link footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="footer-list__item">
+                        <a class="link footer-list__contact" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
@@ -282,7 +279,7 @@
             <!-- Соц. сети в футере -->
             <div class="join-footer">
                 <h3 class="join-title">Присоединяйтесь</h3>
-                <ul class="list join-list">
+                <ul class="list join">
                     <li class="join-item icon-instagram">
                         <a class="link join-link" href="#">
                             <svg class="join-icon" wigth="20" height="20">

@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Студия</title>
 </head>
@@ -14,17 +11,17 @@
 <body>
     <!-- Шапка сайта-->
     <header class="header">
-        <div class="container header-container">
+        <div class="container header">
             <nav class="header-nav">
                 <a href="#" class="link logo header-logo"><span class="logo-web">Web</span>Studio</a>
-                <ul class="list nav-list">
+                <ul class="list nav">
                     <li class="nav-item"><a class="link nav-link nav-link--current" href="./index.html">Студия</a></li>
                     <li class="nav-item"><a class="link nav-link nav-link--inactive" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav-item"><a class="link nav-link nav-link--inactive" href="#">Контакты</a></li>
                 </ul>
             </nav>
 
-            <ul class="list header-contacts">
+            <ul class="list contacts">
                 <li class="contacts-item contacts-item--position">
                     <a class="link contacts-link" href="mailto:info@devstudio.com">
                     <svg class="contacts-icon" width="16px" height="12px">
@@ -45,7 +42,7 @@
 
     <main>
         <!-- Герой -->
-        <div class="hero-overlay">
+        <div class="overlay-hero">
             <section class="hero">
                 <div class="container hero-container">
                     <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
@@ -151,7 +148,7 @@
         <section class="team">
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
-                <ul class="list workers-list">
+                <ul class="list workers">
                     <li class="workers-item">
                         <img src="./images/worker1.jpg" 
                         alt="Фото члена команды номер 1"
@@ -159,7 +156,7 @@
                         />
                         <h3 class="workers-name">Игорь Демьяненко</h3>
                         <p class="workers-text">Product Designer</p>
-                        <ul class="list social-list">
+                        <ul class="list social">
                             <li class="social-item">
                                 <a class="link social-link" href="#">
                                     <svg class="social-icon" wigth="20" height="20">
@@ -197,7 +194,7 @@
                         />
                         <h3 class="workers-name">Ольга Репина</h3>
                         <p class="workers-text">Frontend Developer</p>
-                        <ul class="list social-list">
+                        <ul class="list social">
                             <li class="social-item">
                                 <a class="link social-link" href="#">
                                     <svg class="social-icon" wigth="20" height="20">
@@ -235,7 +232,7 @@
                         />
                         <h3 class="workers-name">Николай Тарасов</h3>
                         <p class="workers-text">Marketing</p>
-                        <ul class="list social-list">
+                        <ul class="list social">
                             <li class="social-item">
                                 <a class="link social-link" href="#">
                                     <svg class="social-icon" wigth="20" height="20">
@@ -273,7 +270,7 @@
                         />
                         <h3 class="workers-name">Михаил Ермаков</h3>
                         <p class="workers-text">UI Designer</p>
-                        <ul class="list social-list">
+                        <ul class="list social">
                             <li class="social-item">
                                 <a class="link social-link" href="#">
                                     <svg class="social-icon" wigth="20" height="20">
@@ -366,27 +363,27 @@
 
             <!-- Контакты в футере -->
             <div class="contacts-footer">
-                <a class="link logo footer-logo" href="#">
+                <a class="link logo logo--footer" href="#">
                     <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
                 </a>
             
                 <ul class="list footer-list">
-                    <li class="footer-item">
-                        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                    <li class="footer-list__item">
+                        <address class="footer-list__address">г. Киев, пр-т Леси Украинки, 26</address>
                     </li>
-                    <li class="footer-item">
-                        <a class="link footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li class="footer-list__item">
+                        <a class="link footer-list__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="footer-item">
-                        <a class="link footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="footer-list__item">
+                        <a class="link footer-list__contact" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </div>
+                </div>
 
             <!-- Соц. сети в футере -->
             <div class="join-footer">
                 <h3 class="join-title">Присоединяйтесь</h3>
-                <ul class="list join-list">
+                <ul class="list join">
                     <li class="join-item icon-instagram">
                         <a class="link join-link" href="#">
                             <svg class="join-icon" wigth="20" height="20">
@@ -451,53 +448,53 @@
 
                 <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form name="user_form" class="user-form" autocomplete="on">
-                    <div class="form-field">
-                        <label for="user_name" class="form-label"></label>
-                        <span class="label-title">Имя</span>
-                        <div class="position-container">                           
-                            <input type="text" name="user_name" id="user_name" class="form-input" />
-                            <svg class="person icon-form" wigth="18" height="18">
+                    <div class="user-form__field">
+                        <label for="user_name" class="user-form__label"></label>
+                        <span class="user-form__label-title">Имя</span>
+                        <div class="user-form--position">                           
+                            <input type="text" name="user_name" id="user_name" class="user-form__input" />
+                            <svg class="person user-form__icon" wigth="18" height="18">
                                 <use href="./images/sprite.svg#icon-person"></use>
                             </svg>
                         </div>
                     </div>
 
-                    <div class="form-field">
-                        <label for="user_tel" class="form-label"></label>
-                        <span class="label-title">Телефон</span>
-                        <div class="position-container">
-                            <input type="tel" name="user_tel" id="user_tel" class="form-input" />
-                            <svg class="phone icon-form" wigth="18" height="18">
+                    <div class="user-form__field">
+                        <label for="user_tel" class="user-form__label"></label>
+                        <span class="user-form__label-title">Телефон</span>
+                        <div class="user-form--position">
+                            <input type="tel" name="user_tel" id="user_tel" class="user-form__input" />
+                            <svg class="phone user-form__icon" wigth="18" height="18">
                                 <use href="./images/sprite.svg#icon-phone"></use>
                             </svg>
                         </div>
                     </div>
 
-                    <div class="form-field">
-                        <label for="user_email" class="form-label"></label>
-                        <span class="label-title">Почта</span>
-                        <div class="position-container">
-                            <input type="email" name="user_email" id="user_email" class="form-input" />
-                            <svg class="email icon-form" wigth="18" height="18">
+                    <div class="user-form__field">
+                        <label for="user_email" class="user-form__label"></label>
+                        <span class="user-form__label-title">Почта</span>
+                        <div class="user-form--position">
+                            <input type="email" name="user_email" id="user_email" class="user-form__input" />
+                            <svg class="email user-form__icon" wigth="18" height="18">
                                 <use href="./images/sprite.svg#icon-email"></use>
                             </svg>
                         </div>
                     </div>
 
-                    <div class="form-field">
-                        <label class="form-label">
-                            <span class="label-title">Комментарий</span>
+                    <div class="user-form__field">
+                        <label class="user-form__label">
+                            <span class="user-form__label-title">Комментарий</span>
                             <textarea name="comment" rows="5" 
-                            class="comment" placeholder="Введите текст"></textarea>
+                            class="user-form__comment" placeholder="Введите текст"></textarea>
                         </label>
                     </div>
                     
-                    <div class="agreement-field">                        
-                        <label class="agree-label">
-                            <input type="checkbox" name="agreement" value="agree" class="agree-checkbox" />
-                            <span class="check-icon"></span>
-                            <span class="agree-text">Соглашаюсь с рассылкой и принимаю
-                                <a class="agree-link" href="#">Условия договора</a> 
+                    <div class="agree-field">                        
+                        <label class="agree-field__label">
+                            <input type="checkbox" name="agreement" value="agree" class="agree-field__checkbox" />
+                            <span class="agree-field__icon"></span>
+                            <span class="agree-field__text">Соглашаюсь с рассылкой и принимаю
+                                <a class="agree-field__link" href="#">Условия договора</a> 
                             </span>
                         </label>
                     </div>

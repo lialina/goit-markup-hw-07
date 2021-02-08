@@ -1,0 +1,46 @@
+/* Advantages*/
+.advantages {
+  padding: 94px 0;
+
+  &-title {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  &-list {
+    display: flex;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: $second-background-color;
+  }
+
+  &-subtitle {
+    margin-bottom: 10px;
+    font-weight: $bold-font-weight;
+    font-size: $font-size-14;
+    line-height: $line-height-1-14;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    color: $second-text-color;
+
+    font-size: $font-size-14;
+    line-height: $line-height-1-71;
+  }
+}
